@@ -128,7 +128,7 @@ Skewness measures the degree of asymmetry of a distribution around its mean. Pos
 #### Gender:
 There is a fair distribution of all categories in Gender. There are 2 categories in total Male and Female. The Gender Female has the maximum number of contributions in data with a percentage share of 50.7% and rest are Males.
 
-![Alt text](gender.png "Optional title")
+![Alt text](EDA_Images/gender.png "Optional title")
 
 #### Type of Travel:
 There are two categories in Type of Travellers: Business travellers and Personal travellers. Business travels have more occurrence compared to Personal travels with 69.1% for Business travel and remaining for Personal travel.

@@ -133,43 +133,43 @@ There is a fair distribution of all categories in Gender. There are 2 categories
 #### Type of Travel:
 There are two categories in Type of Travellers: Business travellers and Personal travellers. Business travels have more occurrence compared to Personal travels with 69.1% for Business travel and remaining for Personal travel.
 
-![Alt text](travel.png "Optional title")
+![Alt text](images/travel.png "Optional title")
 
 #### Customer Type:
 We have two categories in the customer type column which are a set of loyal customers and another set of disloyal customers . In this feature there is quite an imbalance in the data, from which we can interpret that the loyal customer base is more compared to the disloyal customer base .We have 81.17 % of loyal customers of the airlines and the rest 18.2% fall under the category of disloyal customers.
 
-![Alt text](csutomer.png "Optional title")
+![Alt text](images/csutomer.png "Optional title")
 
 #### Class:
 There are 3 classes of passengers for the airline which consists of Business class,Economy class and Economy + class. Our whole set of passengers fall into these three categories at values of 47.7%, 44.9%,7.2% respectively from which we can interpret that most passengers tend to choose Business class and very few passengers opt for the Economy plus. 
 
-![Alt text](ecoplus.png "Optional title")
+![Alt text](images/ecoplus.png "Optional title")
 
 Here we combined Eco and Eco plus for balancing the data run multi models.
 
-![Alt text](eco.png "Optional title")
+![Alt text](images/eco.png "Optional title")
 
 #### Online Boarding:
 Online boarding features tells us how satisfied the passengers were in the process of online boarding.With an average score of 3.25 it can be interpreted as the passengers were slightly satisfied with the online boarding service . While most of them rated the feature with 4 stars.
 
-![Alt text](6.png "Optional title")
+![Alt text](images/6.png "Optional title")
 
 ### Bivariate Analysis
 #### Flight Distance vs Departure Delay
 The Following Plot displays the relationship between the distance a flight is scheduled to cover and the length of delay it experienced before departure. The x-axis, labeled 'Flight Distance', likely represents the total distance of the flight in miles or kilometers, and the y-axis, labeled 'Departure Delay in Minutes', shows how many minutes the flight was delayed.
 
-![Alt text](bi_1.png "Optional title")
+![Alt text](images/bi_1.png "Optional title")
 
 #### Age Distribution by Type of Travel
 The below plot shows relationship between the age of the passengers and their type of travel. It shows the distribution of ages among those who travel for personal reasons versus those who travel for business. From the boxplot, you can observe the central tendency, spread, and any potential outliers in age for both categories of travel.
 
-![Alt text](bi_2.png "Optional title")
+![Alt text](images/bi_2.png "Optional title")
 
 #### Class Vs Satisfaction
 
 The following stacked bar chart shows compares the satisfaction levels of passengers across three different travel classes offered by an airline: Business, Eco.
 
-![Alt text](bi_3.png "Optional title")
+![Alt text](images/bi_3.png "Optional title")
 
 ### Correlation 
 
@@ -179,7 +179,7 @@ Below is the correlation plot representing all the features in our data and the 
 
 Whereas, 'Departure Delay in Minutes', 'Arrival Delay in Minutes' both show a slightly negative relationship with satisfaction, indicating that as delays increase, customer satisfaction tends to decrease, although the relationship is not strongly marked.
 
-![Alt text](corr.png "Optional title")
+![Alt text](images/corr.png "Optional title")
 
 ### Feature Engineering
 
@@ -327,7 +327,7 @@ Decision trees can also be used to find customer churn rates.
 Important Terms Used in Decision Trees: 
 ##### Entropy: 
 Entropy is the measure of uncertainty or randomness in a data set. Entropy handles how a decision tree splits the data. It is calculated using the following formula: 
-![Alt text](entropy.png "Optional title")
+![Alt text](images/entropy.png "Optional title")
 
 
 ##### Information Gain: 
@@ -345,7 +345,7 @@ A leaf node in a decision tree carries the final results. These nodes, which are
 In an automated process, we use a set of algorithms and tools to do the actual process of decision making and branching based on the attributes of the data. The originally unsorted data at least according to our needs must be analysed based on a variety of attributes in multiple steps and segregated to reach lower randomness or achieve lower entropy. While completing this segregation (given that the same attribute may appear more than once), the algorithm needs to consider the probability of a repeat occurrence of an attribute. Therefore, we can also refer to the decision tree as a type of probability tree.
 The data at the root node is quite random, and the degree of randomness or messiness is called entropy. As we break down and sort the data, we arrive at a higher degree of accurately-sorted data and achieve different degrees of information, or ‘“Information gain.”
 ### For Business Class
-![Alt text](decisiontree_B.png "Optional title")
+![Alt text](images/decisiontree_B.png "Optional title")
 
 **Accuracy**: 0.948
 #### Root Node:
@@ -384,7 +384,7 @@ The data at the root node is quite random, and the degree of randomness or messi
 | **Actual: No**   | 2303          | 224            |
 | **Actual: Yes**  | 235           | 6132           |
 ### For Economy Class
-![Alt text](decisiontree_E.png "Optional title")
+![Alt text](images/decisiontree_E.png "Optional title")
 
 **Accuracy**: 0.9245
 #### Root Node:
@@ -455,7 +455,7 @@ The other main concept in the random forest is that each tree sees only a subset
 #### ROC curve for Business Class
 An ROC curve plots the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. The true positive rate is also known as sensitivity, recall, or probability of detection in different areas. The false positive rate is also known as the probability of false alarm and can be calculated as (1 - specificity).   
 
-![Alt text](roc_b.png "Optional title")
+![Alt text](images/roc_b.png "Optional title")
 - The blue line represents the ROC curve of a classification model.
 - The area under the curve (AUC) is mentioned as 0.97, which indicates a high level of discrimination ability for the classifier. This means the model is able to differentiate between the positive and negative classes with 97% probability.
 - The closer the ROC curve follows the left-hand border and then the top border of the ROC space, the more accurate the test.
@@ -485,7 +485,7 @@ An ROC curve plots the true positive rate (TPR) against the false positive rate 
 #### ROC curve for Economy Class
 An ROC curve plots the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. The true positive rate is also known as sensitivity, recall, or probability of detection in different areas. The false positive rate is also known as the probability of false alarm and can be calculated as (1 - specificity).
 
-![Alt text](roc_e.png "Optional title")
+![Alt text](images/roc_e.png "Optional title")
 - The curve starts at the bottom left of the plot and rises towards the top left corner, indicating that the model has good discriminatory power.
 - The closer the curve comes to the top left corner, the better the model is at distinguishing between the positive and negative classes.
 - The area under the ROC curve (AUC) is 0.89, which is quite high, suggesting that the model has a good measure of separability. The AUC is a single scalar value that summarizes the performance of the model across all classification thresholds.
